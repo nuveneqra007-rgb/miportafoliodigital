@@ -100,3 +100,23 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+// ===== FIX PROYECTOS =====
+window.addEventListener('load', () => {
+  const cards = document.querySelectorAll('.proyecto-card');
+  
+  const cardObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('revealed');
+        }, i * 100);
+        cardObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+
+  cards.forEach(card => {
+    card.classList.remove('revealed');
+    cardObserver.observe(card);
+  });
+});
