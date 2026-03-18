@@ -883,3 +883,26 @@ a { text-decoration: none; color: inherit; }
 
   .footer-links { flex-wrap: wrap; justify-content: center; }
 }
+@media (max-width: 640px) {
+  /* ya tienes este bloque, agrégale esto adentro: */
+
+  .hero {
+    padding: 100px 20px 60px;
+  }
+
+  .hero-title {
+    font-size: clamp(38px, 11vw, 52px);
+    line-height: 1.1;
+    word-break: break-word;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+    padding: 0 4px;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 0;
+  }
+}
