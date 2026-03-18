@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexander — Portafolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-logo">
+      <span class="logo-mark">A</span>
+      <span class="logo-text">Alexander<span class="logo-dot">.</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto" class="nav-cta">Contacto</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</header>
+ 
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-lines"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Disponible para proyectos
+    </div>
+    <h1 class="hero-title">
+      Hola, soy<br>
+      <span class="hero-name">Alexander</span>
+    </h1>
+    <p class="hero-sub">Desarrollador web en constante aprendizaje. Transformo ideas en experiencias digitales con <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> y <strong>React</strong>.</p>
+    <div class="hero-actions">
+      <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+      <a href="#contacto" class="btn-ghost">Contáctame</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">5</span>
+        <span class="stat-label">Proyectos</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Tecnologías</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">18</span>
+        <span class="stat-label">Años</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+ 
+<!-- SOBRE MÍ -->
+<section class="section sobre-mi" id="sobre-mi">
+  <div class="container">
+    <div class="section-tag">01 — Sobre mí</div>
+    <div class="sobre-grid">
+      <div class="sobre-text">
+        <h2 class="section-title">Construyo el<br><em>futuro digital</em>,<br>línea a línea.</h2>
+        <p>Soy un desarrollador de 18 años con pasión por crear interfaces modernas y funcionales. Mi enfoque está en perfeccionar mis habilidades técnicas y creativas para entregar proyectos que marquen la diferencia.</p>
+        <p>Cada proyecto es una oportunidad de aprender algo nuevo, enfrentar desafíos reales y llevar mis habilidades al siguiente nivel.</p>
+        <div class="skills-row">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+      <div class="sobre-visual">
+        <div class="visual-card">
+          <div class="vc-header">
+            <div class="vc-dots"><span></span><span></span><span></span></div>
+            <span class="vc-title">alexander.jsx</span>
+          </div>
+          <div class="vc-code">
+            <div class="code-line"><span class="c-kw">const</span> <span class="c-fn">developer</span> = {</div>
+            <div class="code-line pad"><span class="c-key">nombre</span>: <span class="c-str">"Alexander"</span>,</div>
+            <div class="code-line pad"><span class="c-key">edad</span>: <span class="c-num">18</span>,</div>
+            <div class="code-line pad"><span class="c-key">rol</span>: <span class="c-str">"Frontend Dev"</span>,</div>
+            <div class="code-line pad"><span class="c-key">stack</span>: [</div>
+            <div class="code-line pad2"><span class="c-str">"React"</span>, <span class="c-str">"JS"</span>, <span class="c-str">"CSS"</span></div>
+            <div class="code-line pad">],</div>
+            <div class="code-line pad"><span class="c-key">disponible</span>: <span class="c-bool">true</span></div>
+            <div class="code-line">};</div>
+          </div>
+        </div>
+        <div class="visual-badge vb-1">🚀 Aprendizaje continuo</div>
+        <div class="visual-badge vb-2">⚡ React 18</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- PROYECTOS -->
+<section class="section proyectos" id="proyectos">
+  <div class="container">
+    <div class="section-tag">02 — Proyectos</div>
+    <div class="proyectos-header">
+      <h2 class="section-title">Lo que he<br><em>construido</em>.</h2>
+      <p class="proyectos-sub">Aplicaciones desarrolladas durante mi camino en el desarrollo web. Cada una representa un reto superado.</p>
+    </div>
+    <div class="proyectos-grid">
+ 
+      <!-- Proyecto 1 - Featured -->
+      <article class="proyecto-card featured reveal">
+        <div class="pc-top">
+          <div class="pc-icon">🧮</div>
+          <div class="pc-links">
+            <a href="https://calculadoradigital99.netlify.app/" target="_blank" class="pc-link" title="Ver proyecto">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3>Calculadora Digital</h3>
+        <p>Aplicación de cálculo con interfaz moderna construida en React. Manejo de estado, operaciones complejas y diseño responsivo.</p>
+        <div class="pc-tech">
+          <span>React</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="pc-difficulty">
+          <span class="diff-label">Dificultad</span>
+          <div class="diff-bars">
+            <span class="bar active"></span><span class="bar active"></span><span class="bar active"></span><span class="bar active"></span><span class="bar"></span>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Proyecto 2 -->
+      <article class="proyecto-card reveal">
+        <div class="pc-top">
+          <div class="pc-icon">🕐</div>
+          <div class="pc-links">
+            <a href="https://reloj-digitalreact.netlify.app/" target="_blank" class="pc-link" title="Ver proyecto">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3>Reloj Digital</h3>
+        <p>Reloj en tiempo real con animaciones fluidas. Sincronización con el sistema y diseño minimalista.</p>
+        <div class="pc-tech">
+          <span>React</span><span>CSS</span><span>Hooks</span>
+        </div>
+        <div class="pc-difficulty">
+          <span class="diff-label">Dificultad</span>
+          <div class="diff-bars">
+            <span class="bar active"></span><span class="bar active"></span><span class="bar active"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Proyecto 3 -->
+      <article class="proyecto-card reveal">
+        <div class="pc-top">
+          <div class="pc-icon">🎨</div>
+          <div class="pc-links">
+            <a href="https://cambiadordecolooor.netlify.app/" target="_blank" class="pc-link" title="Ver proyecto">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3>Cambiador de Color</h3>
+        <p>Generador de colores aleatorios con paletas dinámicas. Exploración de DOM y manipulación de estilos en tiempo real.</p>
+        <div class="pc-tech">
+          <span>JavaScript</span><span>CSS</span><span>DOM</span>
+        </div>
+        <div class="pc-difficulty">
+          <span class="diff-label">Dificultad</span>
+          <div class="diff-bars">
+            <span class="bar active"></span><span class="bar active"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Proyecto 4 -->
+      <article class="proyecto-card reveal">
+        <div class="pc-top">
+          <div class="pc-icon">🔢</div>
+          <div class="pc-links">
+            <a href="https://contadordigitaal.netlify.app/" target="_blank" class="pc-link" title="Ver proyecto">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3>Contador Digital</h3>
+        <p>Aplicación de conteo con manejo de estado en React. Operaciones de incremento, decremento y reinicio.</p>
+        <div class="pc-tech">
+          <span>JavaScript</span><span>HTML</span><span>CSS</span>
+        </div>
+        <div class="pc-difficulty">
+          <span class="diff-label">Dificultad</span>
+          <div class="diff-bars">
+            <span class="bar active"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+        </div>
+      </article>
+ 
+      <!-- Proyecto 5 -->
+      <article class="proyecto-card reveal">
+        <div class="pc-top">
+          <div class="pc-icon">📋</div>
+          <div class="pc-links">
+            <a href="https://to-do-listdigitaaal.netlify.app/" target="_blank" class="pc-link" title="Ver proyecto">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3>To-Do List</h3>
+        <p>Gestión de tareas completa con funciones de agregar, completar y eliminar. Estado persistente con React Hooks.</p>
+        <div class="pc-tech">
+          <span>React</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="pc-difficulty">
+          <span class="diff-label">Dificultad</span>
+          <div class="diff-bars">
+            <span class="bar active"></span><span class="bar active"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+        </div>
+      </article>
+ 
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACTO -->
+<section class="section contacto" id="contacto">
+  <div class="container">
+    <div class="section-tag">03 — Contacto</div>
+    <div class="contacto-inner">
+      <div class="contacto-text">
+        <h2 class="section-title">¿Tienes un<br><em>proyecto</em> en mente?</h2>
+        <p>Estoy abierto a colaboraciones, proyectos freelance y oportunidades de aprendizaje. No dudes en escribirme.</p>
+        <div class="contacto-links">
+          <a href="https://github.com" target="_blank" class="clink">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.648.5.5 5.648.5 12c0 5.093 3.292 9.415 7.875 10.951.576.106.789-.25.789-.556 0-.274-.01-1.002-.015-1.964-3.2.696-3.875-1.543-3.875-1.543-.525-1.333-1.28-1.689-1.28-1.689-1.045-.715.08-.701.08-.701 1.157.082 1.767 1.19 1.767 1.19 1.028 1.762 2.698 1.253 3.357.958.104-.745.402-1.253.731-1.54-2.556-.29-5.242-1.278-5.242-5.686 0-1.257.448-2.287 1.183-3.091-.119-.291-.513-1.463.112-3.052 0 0 .965-.309 3.161 1.182.916-.254 1.898-.381 2.874-.386.975.005 1.957.132 2.875.386 2.193-1.491 3.156-1.182 3.156-1.182.628 1.589.234 2.761.115 3.052.737.804 1.182 1.834 1.182 3.091 0 4.42-2.692 5.392-5.255 5.678.413.355.781 1.053.781 2.122 0 1.533-.014 2.77-.014 3.146 0 .31.21.67.797.556C20.71 21.413 24 17.093 24 12c0-6.352-5.148-11.5-11.5-11.5z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="clink">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5c0 1.381-1.12 2.5-2.49 2.5S0 4.881 0 3.5 1.119 1 2.49 1s2.49 1.119 2.49 2.5zM.24 24h4.497V7.935H.24V24zM7.443 7.935v16.065h4.497v-8.739c0-4.348 5.771-4.698 5.771 0v8.739h4.497v-10.58c0-7.798-8.598-7.508-10.265-3.667V7.935H7.443z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="contacto-card">
+        <div class="cc-inner">
+          <h3>Envíame un mensaje</h3>
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombre" class="form-input">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="tu@email.com" class="form-input">
+          </div>
+          <div class="form-group">
+            <label>Mensaje</label>
+            <textarea placeholder="Cuéntame sobre tu proyecto..." class="form-input" rows="4"></textarea>
+          </div>
+          <button class="btn-send" id="sendBtn">
+            <span>Enviar mensaje</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">A</span>
+        <div>
+          <div class="footer-name">Alexander</div>
+          <div class="footer-desc">Portafolio</div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-copy">© 2026 Alexander. Hecho con ❤️ y mucha dedicación</div>
+    </div>
+  </div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
