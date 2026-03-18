@@ -81,42 +81,32 @@ if (sendBtn) {
     }, 3000);
   });
 }
-
-// ===== ACTIVE NAV LINK =====
-const sections = document.querySelectorAll('section[id]');
-window.addEventListener('scroll', () => {
-  const scrollY = window.pageYOffset + 120;
-  sections.forEach(sec => {
-    const top = sec.offsetTop;
-    const height = sec.offsetHeight;
-    const id = sec.getAttribute('id');
-    const link = document.querySelector(`.nav-links a[href="#${id}"]`);
-    if (link) {
-      if (scrollY >= top && scrollY < top + height) {
-        link.style.color = 'var(--text)';
-      } else {
-        link.style.color = '';
-      }
-    }
-  });
-});
-// ===== FIX PROYECTOS =====
-window.addEventListener('load', () => {
+// ===== REVEAL PROYECTOS - FIX TOTAL =====
+function initProyectos() {
   const cards = document.querySelectorAll('.proyecto-card');
   
-  const cardObserver = new IntersectionObserver((entries) => {
+  if (!cards.length) return;
+
+  // Forzar estado inicial
+  cards.forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  });
+
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
-          entry.target.classList.add('revealed');
-        }, i * 100);
-        cardObserver.unobserve(entry.target);
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }, i * 120);
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.05 });
 
-  cards.forEach(card => {
-    card.classList.remove('revealed');
-    cardObserver.observe(card);
-  });
-});
+  cards.forEach(card => observer.observe(card));
+}
+
+document.addEventListener('DOMContentLoaded', initProyectos);
